@@ -1,11 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WDD 131</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WDD 131 - Dynamic Web Fundamentals - Doris Uchechukwu Anakwuba</title>
+  <meta name="author" content="Doris Uchechukwu Anakwuba" />
+  <meta name="description" content="WDD 131 - Dynamic Web Fundamentals home page for Doris Uchechukwu Anakwuba, a web developer from Nigeria." />
+  <link rel="stylesheet" href="styles/base.css" />
 </head>
+
 <body>
-    <h1>WDD 131 - Doris</h1>
+  <header>
+    <span id="page-title">WDD 131: Dynamic Web Fundamentals - Doris Uchechukwu Anakwuba</span>
+    <nav>
+      <a href="https://www.linkedin.com/in/devdoris/" target="_blank">LinkedIn</a>
+      <a href="https://byupw.instructure.com/" target="_blank">Canvas</a>
+      <a href="https://www.churchofjesuschrist.org/study/scriptures?lang=eng" target="_blank">Scripture</a>
+      <a href="">Final Project</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Hello, I'm Doris Uchechukwu Anakwuba</h1>
+
+    <section class="info-box" id="about-me">
+      <h2>About Me</h2>
+      <div class="info-body">
+        <p>
+          My name is Doris, and I am from Nigeria. I’m a passionate learner currently studying web development through BYU–Pathway Worldwide. 
+          I enjoy problem-solving, building user-friendly web applications, and continuously learning new technologies. 
+          Outside of tech, I love music, reading, and spending time with family.
+        </p>
+        <img id="my-photo" src="images/doris.jpg" alt="Photo of Doris Uchechukwu Anakwuba" />
+      </div>
+
+      <h3>Lagos, Nigeria</h3>
+      <div class="my-country">
+        <img src="images/flag-image.jpeg" alt="Flag of Nigeria" />
+        <p><em>Official Flag of Nigeria</em></p>
+        <p>
+          Nigeria is a lively and beautiful country in West Africa. 
+          It’s full of culture, music, and delicious food. 
+          People here are known for their kindness, creativity, and strong spirit.
+        </p>
+      </div>
+    </section>
+
+    <section class="info-box" id="web-favorites">
+      <h2>My Favorite Web Resources</h2>
+      <ul>
+        <li><a href="https://codepen.io" target="_blank">Code Pen</a></li>
+        <li><a href="https://scrimba.com" target="_blank">Scrimba</a></li>
+        <li><a href="https://www.sololearn.com" target="_blank">SoloLearn</a></li>
+        <li><a href="https://www.udemy.com/" target="_blank">Udemy</a></li>
+        <li><a href="https://www.freecodecamp.org" target="_blank">freeCodeCamp</a></li>
+        <li><a href="https://www.w3schools.com/" target="_blank">W3 Schools</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year-now"></span> 💐 Doris Uchechukwu Anakwuba 💐 Nigeria</p>
+    <p id="page-update"></p>
+  </footer>
+
+  <script src="scripts/getdates.js"></script>
 </body>
 </html>
