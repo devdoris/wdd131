@@ -57,14 +57,14 @@ h1 {
   color: #003366;
 }
 
-.info-box {
+.card {
   background-color: white;
   border-radius: 10px;
   padding: 1rem 1.5rem;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
 
-.info-box h2 {
+.card h2 {
   background-color: #003366;
   color: white;
   padding: 0.5rem;
