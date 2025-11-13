@@ -53,3 +53,10 @@ document.querySelectorAll("nav li").forEach(btn => {
     showTemples(filtered);
   });
 });
+
+const menuButton = document.getElementById("menu-button");
+const navMenu = document.querySelector("nav ul");
+
+menuButton.addEventListener("click", () => {
+  navMenu.classList.toggle("show");
+});
