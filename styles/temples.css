@@ -132,6 +132,11 @@ footer {
     display: flex;
   }
 
+  nav li {
+    margin: 0.2rem 0;
+    text-align: center;
+  }
+
   #menu-button {
     display: block;
     position: absolute;
