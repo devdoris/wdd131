@@ -1,0 +1,89 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito", sans-serif;
+    background-color: #eefded;
+    color: #222;
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+header {
+    background-color: goldenrod;
+    color: black;
+    padding: 1.5rem;
+    text-align: center;
+    border-bottom: 12px solid #eefded;
+}
+
+main {
+    max-width: 900px;
+    margin: auto;
+    padding: 1rem;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero picture img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.data-card, .weather-card {
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(5px);
+    padding: 1rem 1.5rem;
+    margin: 1rem 0;
+    border-radius: 5px;
+}
+
+.data-card h2,
+.weather-card h2 {
+    background-color: #008f4c;
+    color: black;
+    padding: 0.5rem;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    display: inline-block;
+}
+
+.data-card ul,
+.weather-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0.5rem 0 0;
+}
+
+.data-card li,
+.weather-card li {
+    margin-bottom: 0.4rem;
+}
+
+.weather-card .icon {
+    font-size: 1.3rem;
+    color: black;
+}
+
+footer {
+    text-align: center;
+    background-color: goldenrod;
+    color: black;
+    padding: 1.5rem 1rem;
+    margin-top: 1.5rem;
+    border-top: 12px solid #eefded;
+}
+
+#lastModified {
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    color: black;
+}
+
+#currentyear {
+    color: black;
+}

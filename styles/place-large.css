@@ -1,0 +1,23 @@
+@media screen and (min-width: 700px) {
+    .hero {
+        position: relative;
+    }
+
+    .data-card {
+        position: absolute;
+        top: 10%;
+        left: 5%;
+        width: 260px;
+    }
+
+    .weather-card {
+        position: absolute;
+        bottom: 10%;
+        right: 5%;
+        width: 230px;
+    }
+
+    .data-card, .weather-card {
+        margin: 0;
+    }
+}

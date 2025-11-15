@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Country Page - Doris Uchechukwu Anakwuba</title>
+    <meta name="author" content="Doris Uchechukwu Anakwuba">
+    <meta name="description" content="WDD 131 - Country Page for Doris Uchechukwu Anakwuba Week03 Assignment">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <script defer src="scripts/place.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Paris, France</h1>
+    </header>
+
+    <main>
+        <section class="hero">
+            <picture>
+                <img src="images/paris-eiffel.jpg" alt="Eiffel Tower in Paris, France">
+            </picture>
+
+            <div class="data-card">
+                <h2>Data</h2>
+                <ul>
+                    <li><strong>Area:</strong> 105.4 sq km</li>
+                    <li><strong>Population:</strong> 2,102,650</li>
+                    <li><strong>Capital:</strong> Paris</li>
+                    <li><strong>Languages:</strong> French</li>
+                    <li><strong>Currency:</strong> Euro (€)</li>
+                    <li><strong>Time Zone:</strong> UTC+1 / UTC+2 (Summer)</li>
+                    <li><strong>Calling Code:</strong> +33</li>
+                    <li><strong>Internet TLD:</strong> .fr</li>
+                </ul>
+            </div>
+
+            <div class="weather-card">
+                <h2>Weather <span class="icon">⛅</span></h2>
+                <ul>
+                    <li><strong>Temperature:</strong> <span id="temperature"></span>°C</li>
+                    <li><strong>Conditions:</strong> Partly Cloudy</li>
+                    <li><strong>Wind:</strong> <span id="wind"></span> km/h</li>
+                    <li><strong>Wind Chill:</strong> <span id="windchill"></span>°C</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> ✺ Doris Uchechukwu Anakwuba ✺ Paris, France.</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
