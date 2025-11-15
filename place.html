@@ -7,11 +7,9 @@
     <meta name="author" content="Doris Uchechukwu Anakwuba">
     <meta name="description" content="WDD 131 - Country Page for Doris Uchechukwu Anakwuba Week03 Assignment">
     <link rel="stylesheet" href="styles/place.css">
-    <link rel="stylesheet" href="styles/place-large.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
-
     <script defer src="scripts/place.js"></script>
 </head>
 <body>
@@ -22,6 +20,7 @@
     <main>
         <section class="hero">
             <picture>
+                <source srcset="images/paris-eiffel.webp 400w, images/paris-eiffel.webp 800w" sizes="(max-width: 600px) 400px, 800px" type="image/webp">
                 <img src="images/paris-eiffel.webp" alt="Eiffel Tower in Paris, France">
             </picture>
 
@@ -40,13 +39,12 @@
             </div>
 
             <div class="weather-card">
-                <h2>Weather 
-                    <svg width="20" height="15" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12 18a6 6 0 100-12 6 6 0 000 12z" fill="#FFD54F"/>
-                    <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="#FFD54F" stroke-width="2" stroke-linecap="round"/>
+                <h2 class="weather-title">Weather 
+                    <svg class="weather-icon" width="20" height="15" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 18a6 6 0 100-12 6 6 0 000 12z" fill="#FFD54F"/>
+                        <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="#FFD54F" stroke-width="2" stroke-linecap="round"/>
                     </svg>
                 </h2>
-
                 <ul>
                     <li><strong>Temperature:</strong> <span id="temperature"></span>°C</li>
                     <li><strong>Conditions:</strong> Partly Sunny</li>

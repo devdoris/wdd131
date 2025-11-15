@@ -24,20 +24,10 @@ header {
     border-bottom: 12px solid #eefded;
 }
 
-header::after {
-    content: "";
-    display: block;
-    height: 0;
-}
-
 main {
     max-width: 900px;
     margin: auto;
     padding: 1rem;
-}
-
-.hero {
-    position: relative;
 }
 
 .hero picture img {
@@ -76,9 +66,24 @@ main {
     margin-bottom: 0.4rem;
 }
 
-.weather-card .icon {
-    font-size: 1.3rem;
-    color: black;
+.weather-title::after {
+    content: "";
+    margin-left: 8px;
+}
+
+.weather-icon {
+    width: 20px;
+    height: 15px;
+    display: inline-block;
+}
+
+@media (max-width: 600px) {
+    .weather-title::after {
+        content: "";
+    }
+    .weather-icon {
+        display: inline-block;
+    }
 }
 
 footer {
@@ -98,4 +103,29 @@ footer {
 
 #currentyear {
     color: black;
+}
+
+@media screen and (min-width: 700px) {
+ @media screen and (min-width: 700px) {
+    .hero {
+        position: relative;
+    }
+
+    .data-card {
+        position: absolute;
+        top: 10%;
+        left: 5%;
+        width: 260px;
+    }
+
+    .weather-card {
+        position: absolute;
+        bottom: 10%;
+        right: 5%;
+        width: 230px;
+    }
+
+    .data-card, .weather-card {
+        margin: 0;
+    }
 }
