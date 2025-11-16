@@ -33,7 +33,4 @@ const chillEl = document.querySelector("#windchill");
 
 if (tempEl) tempEl.textContent = temperature;
 if (windEl) windEl.textContent = wind;
-
-if (chillEl) {
-    chillEl.textContent = calculateWindChill(temperature, wind);
-}
+if (chillEl) chillEl.textContent = calculateWindChill(temperature, wind);

@@ -67,22 +67,27 @@ main {
 }
 
 .weather-title::after {
-    content: "";
+    content: " ☀️";
     margin-left: 8px;
 }
 
 .weather-icon {
+    display: none;
     width: 20px;
     height: 15px;
-    display: inline-block;
+    visibility: hidden;
+    opacity: 0;
 }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
     .weather-title::after {
         content: "";
     }
+
     .weather-icon {
         display: inline-block;
+        visibility: visible;
+        opacity: 1;
     }
 }
 
