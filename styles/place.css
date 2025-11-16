@@ -67,7 +67,7 @@ main {
 }
 
 .weather-title::after {
-    content: " ☀️";
+    content: "☀️";
     margin-left: 8px;
 }
 
