@@ -68,7 +68,6 @@ main {
 
 .weather-title::after {
     content: "☀️";
-    margin-left: 8px;
 }
 
 .weather-icon {
