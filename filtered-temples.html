@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WDD 131 - Filtered Temple Picture Album - Doris Uchechukwu Anakwuba</title>
+  <meta name="author" content="Doris Uchechukwu Anakwuba" />
+  <meta name="description" content="WDD 131 - Filtered Temple Picture Album for Doris Uchechukwu Anakwuba Week04 Assignment" />
+  <link rel="stylesheet" href="styles/filtered-temples.css" />
+  <link rel="stylesheet" href="styles/filtered-temples-large.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet" />
+  <script defer src="scripts/filtered-temples.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Temple Album</h1>
+    <button id="menu-button" aria-controls="nav-menu" aria-expanded="false" aria-label="Toggle Menu">☰</button>
+    <nav id="nav-menu">
+      <ul>
+        <li><button type="button" data-filter="home">Home</button></li>
+        <li><button type="button" data-filter="old">Old</button></li>
+        <li><button type="button" data-filter="new">New</button></li>
+        <li><button type="button" data-filter="large">Large</button></li>
+        <li><button type="button" data-filter="small">Small</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2 id="gallery-heading">All Temples</h2>
+  </main>
+
+  <footer>
+    <p>© <span id="year-now"></span> ✺ Doris Uchechukwu Anakwuba ✺ Nigeria</p>
+    <p id="page-update"></p>
+  </footer>
+</body>
+</html>
