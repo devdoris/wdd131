@@ -75,7 +75,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   ];
 
-
   const main = document.querySelector("main");
   const heading = document.querySelector("#gallery-heading");
 
@@ -116,11 +115,14 @@ document.addEventListener("DOMContentLoaded", () => {
   heading.textContent = "All Temples";
   showTemples(temples);
 
-  const filterButtons = document.querySelectorAll('#nav-menu button[data-filter]');
+  // ⭐ UPDATED: Select <a> links instead of buttons
+  const navLinks = document.querySelectorAll('#nav-menu a[data-filter]');
 
-  filterButtons.forEach(btn => {
-    btn.addEventListener("click", () => {
-      const type = (btn.getAttribute("data-filter") || "home").toLowerCase();
+  navLinks.forEach(link => {
+    link.addEventListener("click", (e) => {
+      e.preventDefault(); // keep page from jumping
+
+      const type = (link.dataset.filter || "home").toLowerCase();
       let filtered = temples;
 
       if (type === "old") {
@@ -141,7 +143,7 @@ document.addEventListener("DOMContentLoaded", () => {
         filtered = temples;
       }
 
-      heading.textContent = type === "home" ? "All Temples" : `${btn.textContent} Temples`;
+      heading.textContent = type === "home" ? "All Temples" : `${link.textContent} Temples`;
       showTemples(filtered);
 
       const navList = document.querySelector("#nav-menu ul");
@@ -153,6 +155,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+  // Hamburger menu
   const menuButton = document.getElementById("menu-button");
   const navList = document.querySelector("#nav-menu ul");
 

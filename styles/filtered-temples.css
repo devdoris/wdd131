@@ -55,10 +55,10 @@ nav li {
   margin: 0;
 }
 
-nav button {
+nav a {
   background-color: var(--btn-bg);
   color: white;
-  border: none;
+  text-decoration: none;
   padding: 0.6rem 1.2rem;
   border-radius: 12px;
   transition: background 0.2s;
@@ -71,12 +71,12 @@ nav button {
   justify-content: center;
 }
 
-nav button:hover,
-nav button:focus {
+nav a:hover,
+nav a:focus {
   background-color: var(--btn-hover);
 }
 
-nav button:focus-visible,
+nav a:focus-visible,
 #menu-button:focus-visible {
   outline: 3px solid rgba(255, 255, 255, 0.35);
   outline-offset: 3px;
