@@ -38,7 +38,7 @@ form {
 .fieldsetstyle {
     display: inline-flex;
     align-items: center;
-    gap: 2rem;
+    gap: 3rem;
     padding: 0.4rem 0.7rem;
     border-radius: 4px;
     cursor:pointer
@@ -80,4 +80,10 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
     background: #361a4e;
+}
+
+@media (max-width: 600px) {
+  select {
+    width: 100%;
+  }
 }
