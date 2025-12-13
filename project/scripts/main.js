@@ -1,0 +1,12 @@
+const scrollTopBtn=document.getElementById('scrollTopBtn');
+window.addEventListener('scroll',()=>{if(window.scrollY>300){scrollTopBtn.style.display='block';}else{scrollTopBtn.style.display='none';}});
+scrollTopBtn.addEventListener('click',()=>{window.scrollTo({top:0,behavior:'smooth'});});
+const themeToggleBtn=document.createElement('button');
+themeToggleBtn.id='themeToggleBtn';
+themeToggleBtn.textContent='🌙🌞';
+document.querySelector('header').appendChild(themeToggleBtn);
+themeToggleBtn.addEventListener('click',()=>{document.body.classList.toggle('dark-theme');});
+const navToggle=document.getElementById('navToggle');
+const navLinks=document.querySelector('.nav-links');
+navToggle.addEventListener('click',()=>{navLinks.classList.toggle('show');});
+document.getElementById('year').textContent=new Date().getFullYear();
